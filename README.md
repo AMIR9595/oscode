@@ -1,2 +1,0 @@
-# oscode
-test_wp
