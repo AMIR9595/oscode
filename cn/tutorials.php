@@ -226,50 +226,24 @@
                     <div class="col-lg-4 col-md-12">
                         <div class="card">
                             <div class="card-body">
-                                <img src="assets/images/yt-logo.png" alt="C++" width="220px">
-                                <p class="cn-lang_text">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Consequuntur, alias!</p>
+                                <a href="#"><img src="assets/images/yt-logo.png" alt="C++" width="220px">
+                                <p class="cn-lang_text">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Consequuntur, alias!</p></a>
                             </div>
                         </div>
                     </div>
                     <div class="col-lg-4 col-md-12">
                         <div class="card">
                             <div class="card-body">
-                            <img src="assets/images/yt-logo.png" alt="C++" width="220px">
-                                <p class="cn-lang_text">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Consequuntur, alias!</p>
+                                <a href="#"><img src="assets/images/yt-logo.png" alt="C++" width="220px">
+                                <p class="cn-lang_text">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Consequuntur, alias!</p></a>
                             </div>
                         </div>
                     </div>
                     <div class="col-lg-4 col-md-12">
                         <div class="card">
                             <div class="card-body">
-                            <img src="assets/images/yt-logo.png" alt="C++" width="220px">
-                                <p class="cn-lang_text">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Consequuntur, alias!</p>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="row">
-                    <div class="col-lg-4 col-md-12">
-                        <div class="card">
-                            <div class="card-body">
-                            <img src="assets/images/yt-logo.png" alt="C++" width="220px">
-                                <p class="cn-lang_text">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Consequuntur, alias!</p>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-lg-4 col-md-12">
-                        <div class="card">
-                            <div class="card-body">
-                            <img src="assets/images/yt-logo.png" alt="C++" width="220px">
-                                <p class="cn-lang_text">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Consequuntur, alias!</p>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-lg-4 col-md-12">
-                        <div class="card">
-                            <div class="card-body">
-                            <img src="assets/images/yt-logo.png" alt="C++" width="220px">
-                                <p class="cn-lang_text">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Consequuntur, alias!</p>
+                                <a href="#"><img src="assets/images/yt-logo.png" alt="C++" width="220px">
+                                <p class="cn-lang_text">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Consequuntur, alias!</p></a>
                             </div>
                         </div>
                     </div>
@@ -278,24 +252,50 @@
                     <div class="col-lg-4 col-md-12">
                         <div class="card">
                             <div class="card-body">
-                            <img src="assets/images/yt-logo.png" alt="C++" width="220px">
-                                <p class="cn-lang_text">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Consequuntur, alias!</p>
+                                <a href="#"><img src="assets/images/yt-logo.png" alt="C++" width="220px">
+                                <p class="cn-lang_text">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Consequuntur, alias!</p></a>
                             </div>
                         </div>
                     </div>
                     <div class="col-lg-4 col-md-12">
                         <div class="card">
                             <div class="card-body">
-                            <img src="assets/images/yt-logo.png" alt="C++" width="220px">
-                                <p class="cn-lang_text">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Consequuntur, alias!</p>
+                                <a href="#"><img src="assets/images/yt-logo.png" alt="C++" width="220px">
+                                <p class="cn-lang_text">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Consequuntur, alias!</p></a>
                             </div>
                         </div>
                     </div>
                     <div class="col-lg-4 col-md-12">
                         <div class="card">
                             <div class="card-body">
-                            <img src="assets/images/yt-logo.png" alt="C++" width="220px">
-                                <p class="cn-lang_text">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Consequuntur, alias!</p>
+                                <a href="#"><img src="assets/images/yt-logo.png" alt="C++" width="220px">
+                                <p class="cn-lang_text">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Consequuntur, alias!</p></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-lg-4 col-md-12">
+                        <div class="card">
+                            <div class="card-body">
+                                <a href="#"><img src="assets/images/yt-logo.png" alt="C++" width="220px">
+                                <p class="cn-lang_text">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Consequuntur, alias!</p></a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-md-12">
+                        <div class="card">
+                            <div class="card-body">
+                                <a href="#"><img src="assets/images/yt-logo.png" alt="C++" width="220px">
+                                <p class="cn-lang_text">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Consequuntur, alias!</p></a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-md-12">
+                        <div class="card">
+                            <div class="card-body">
+                                <a href="#"><img src="assets/images/yt-logo.png" alt="C++" width="220px">
+                                <p class="cn-lang_text">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Consequuntur, alias!</p></a>
                             </div>
                         </div>
                     </div>
