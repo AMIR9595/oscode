@@ -41,7 +41,7 @@
 					</div>
 
 					<div class="wrap-input100 validate-input" data-validate = "Введите правильный Пароль!">
-						<input class="input100" type="password" name="pass" value="<?php echo @$data['password']; ?>" placeholder="Введите пароль">
+						<input class="input100" type="password" name="password" value="<?php echo @$data['password']; ?>" placeholder="Введите пароль">
 						<span class="focus-input100"></span>
 						<span class="symbol-input100">
 							<i class="fa fa-lock" aria-hidden="true"></i>
@@ -59,11 +59,11 @@
 						$data = $_POST;
 						if( isset($data['do_login'])) {
 							$errors = array();
-							$user = R::findOne('signup', 'user_email = ?', array($data['user_email']));
+							$user = R::findOne('signup', 'email = ?', array($data['email']));
 							if( $user ) {
-								if( password_verify($data['password'], $user->user_password)) {
+								if( password_verify($data['password'], $user->password)) {
 									$_SESSION['logged_user'] = $user;
-									echo '<div style="color: green;"> Вы авторизованы! <br> Можете перейти на <a href="cabinet.php"> личный кабинет</a></div>';
+									echo '<div class="login-result"> Вы авторизованы! <br> Можете перейти на <a href="cabinet.php"> личный кабинет</a></div>';
 								} else {
 									$errors[] = 'Неверно введён пароль!';
 								}
@@ -72,7 +72,7 @@
 							}
 							if( ! empty($errors))
 							{
-								echo '<div style="color: red;">'.array_shift($errors).'</div><br>';
+								echo '<div class="login-result">'.array_shift($errors).'</div><br>';
 							}
 						}
 					?>

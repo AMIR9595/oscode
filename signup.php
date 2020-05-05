@@ -54,7 +54,7 @@
 					</div>
 
 					<div class="wrap-input100 validate-input" data-validate = "Пароль нельзья оставит пустым!">
-						<input class="input100" type="password" name="pass" value="<?php echo @$data['pass']; ?>" placeholder="Введите пароль">
+						<input class="input100" type="password" name="password" value="<?php echo @$data['password']; ?>" placeholder="Введите пароль">
 						<span class="focus-input100"></span>
 						<span class="symbol-input100">
 							<i class="fa fa-lock" aria-hidden="true"></i>
@@ -62,14 +62,14 @@
 					</div>
 
 					<div class="wrap-input100 validate-input" data-validate = "Пароль нельзья оставит пустым!">
-						<input class="input100" type="password" name="repass" value="<?php echo @$data['repass']; ?>" placeholder="Повторите пароль">
+						<input class="input100" type="password" name="repassword" value="<?php echo @$data['repassword']; ?>" placeholder="Повторите пароль">
 						<span class="focus-input100"></span>
 						<span class="symbol-input100">
 							<i class="fa fa-lock" aria-hidden="true"></i>
 						</span>
 					</div>
 					<div class="container-login100-form-btn">
-						<button type="submit" name="do_reg" class="login100-form-btn">
+						<button type="submit" name="do_signup" class="login100-form-btn">
 							Регистрация
 						</button>
 					</div><br>
@@ -77,7 +77,7 @@
 						require "db.php";
 						
 						$data = $_POST;
-						if( isset($data['do_reg']))
+						if( isset($data['do_signup']))
 						 {
 							$errors = array();
 							if( trim($data['name']) == '') {
@@ -89,26 +89,26 @@
 							if( trim($data['email']) == '') {
 								$errors[] = 'Введите Почту!';
 							}
-							if( $data['pass'] == '') {
+							if( $data['password'] == '') {
 								$errors[] = 'Введите Пароль!';
 							}
-							if( $data['repass'] != $data['pass']) {
+							if( $data['repassword'] != $data['password']) {
 								$errors[] = 'Повторный пароль введён не верно!';
 								if( R::count('signup', "email = ?", array($data['email'])) > 0 ) {
-									$errors[] = 'Пользователь с таким почтой существует!';
+									$errors[] = 'Пользователь с такой почтой существует!';
 								}
 							}
 							if( empty($errors)) {
 								$user = R::dispense('signup');
-								$user->user_name = $data['name'];
-								$user->user_surname = $data['surname'];
-								$user->user_email  = $data['email'];
-								$user->user_password = password_hash($data['user_password'], PASSWORD_DEFAULT);
-								$user->user_repassword = password_hash($data['user_repassword'], PASSWORD_DEFAULT);
+								$user->name = $data['name'];
+								$user->surname = $data['surname'];
+								$user->email  = $data['email'];
+								$user->password = password_hash($data['password'], PASSWORD_DEFAULT);
+								$user->repassword = password_hash($data['repassword'], PASSWORD_DEFAULT);
 							R::store($user);
-							echo '<div stle="color: green;">Вы успешно зарегестрированы!</div>';
+							echo '<div class="reg-result">Вы успешно зарегестрированы!</div>';
 							} else {
-								echo '<div stle="color: red;">'.array_shift($errors).'</div>';
+								echo '<div>'.array_shift($errors).'</div>';
 							}
 						}
 					?>
