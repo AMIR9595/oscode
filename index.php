@@ -31,12 +31,6 @@
 
 <body class="landing-page">   
     <div class="page-wrapper">
-    
-    <?php if ( isset($_SESSION['logged_user'])) : ?>
-        Авторизован! <br>
-
-    <?php else : ?>
-    <?php endif; ?>
         <!-- ******Header****** -->
         
         <header>
@@ -44,8 +38,23 @@
                 <div class="header-menu">
                     <ul class="header-menu__list">
                         <li><a href="index.php"><img src="assets/images/logo.png" alt="LOGO" width="36px"></a></li>
+                        <?php if ( isset($_SESSION['logged_user'])) : ?> 
+                        <li class="header-menu__list-text">
+                        <div class="dropdown">
+                        <a class="btn btn-secondary btn- dropdown-toggle" href="#" role="button" id="dropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                          <?php echo $_SESSION['logged_user']->name;?>
+                          Амирджон Раджабов
+                        </a>
+                        <div class="dropdown-menu btn-username" aria-labelledby="dropdownMenuLink">
+                            <a class="dropdown-item" href="cn/cabinet.php">Личный кабинет</a>
+                            <a class="dropdown-item" href="logout.php">Выход</a>
+                        </div>
+                        </div>
+                        </li> <br>
+                        <?php else : ?>
                         <li class="header-menu__list-text"><a href="/signup.php">Регистрация</a></li>
                         <li class="header-menu__list-text"><a href="/login.php">Вход</a></li>
+                        <?php endif; ?>
                     </ul>
                 </div>
             </div>

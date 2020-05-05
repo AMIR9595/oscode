@@ -63,12 +63,12 @@
 							if( $user ) {
 								if( password_verify($data['password'], $user->password)) {
 									$_SESSION['logged_user'] = $user;
-									echo '<div class="login-result"> Вы авторизованы! <br> Можете перейти на <a href="cabinet.php"> личный кабинет</a></div>';
+									echo '<div class="login-result"> Вы авторизованы! <br> Можете перейти на <a href="cn/cabinet.php"> ЛИЧНЫЙ КАБИНЕТ</a></div>';
 								} else {
 									$errors[] = 'Неверно введён пароль!';
 								}
 								} else {
-									$errors[] = 'Пользователь не найден!';
+									$errors[] = 'Неверно введён почтовый ящик!';
 							}
 							if( ! empty($errors))
 							{
