@@ -184,18 +184,7 @@
                                 aria-expanded="false"><i data-feather="log-out" class="feather-icon"></i><span
                                     class="hide-menu">Выход</span></a></li>
                         <script>
-                           var aElems = document.getElementsByTagName('a');
-                            for (var i = 0, len = aElems.length; i < len; i++) {
-                                aElems[i].onclick = function() {
-                                    var check = confirm("Вы уверены что хотите выйти?");
-                                    if (check == true) {
-                                        return true;
-                                    }
-                                    else {
-                                        return false;
-                                    }
-                                };
-                            }
+
                         </script>
                     </ul>
                 </nav>

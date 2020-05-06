@@ -41,7 +41,14 @@ $(document).ready(function() {
     $(document).delegate('*[data-toggle="lightbox"]', 'click', function(e) {
         e.preventDefault();
         $(this).ekkoLightbox();
-    });    
+    });
+
+    $('.js-logout').off('.profile-logout').on('click.profile-logout', (event) => {
+        event.preventDefault();
+        if (confirm('Вы уверены что хотите выйти?')) {
+            // Логика выхода
+        }
+    });
 
 
 });
